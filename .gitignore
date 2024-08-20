@@ -1,3 +1,5 @@
 .obsidian
 /node_modules
 .vercel
+.vitepress/dist
+.vitepress/cache
