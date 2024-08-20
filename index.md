@@ -5,7 +5,9 @@ layout: home
 hero:
   name: "Algorithms SkillFactory Exam"
   text: "Билеты с экзамена по алгоритмам ИРИТ-РТФ SkillFactory 2024"
-  tagline: My great project tagline
+  image:
+    src: /home-icon.webp
+    alt: УрФУ норм уник
   actions:
     - theme: brand
       text: Tasks

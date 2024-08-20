@@ -1,19 +1,23 @@
 import { defineConfig } from 'vitepress';
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Algorithms SkillFactory',
+  head: [['link', { rel: 'icon', href: '/home-icon.webp' }]],
   description: 'Билеты с экзамена по алгоритмам ИРИТ-РТФ SkillFactory 2024',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/home-icon.webp',
+    search: {
+      provider: 'local',
+    },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Tasks', link: '/readme.md' }
+      { text: 'Tasks', link: '/readme.md' },
     ],
 
     sidebar: [
       {
-        text: 'Определения',
+        text: 'Основные определения',
+        collapsed: true,
         items: [
           { text: 'Алгоритм и его свойства', link: '/tasks/001.md' },
           { text: 'Структура данных', link: '/tasks/002.md' },
@@ -37,6 +41,7 @@ export default defineConfig({
       },
       {
         text: 'Сортировки',
+        collapsed: true,
         items: [
           {
             text: 'Сортировка сравнением. Понятие инверсии. Сортировка пузырьком.',
@@ -61,6 +66,7 @@ export default defineConfig({
       },
       {
         text: 'Структуры данных',
+        collapsed: true,
         items: [
           { text: 'Структура данных «Список»', link: '/tasks/017.md' },
           {
@@ -99,6 +105,7 @@ export default defineConfig({
       },
       {
         text: 'Хеш-функции',
+        collapsed: true,
         items: [
           {
             text: 'Хеш-функции. Хеш-таблицы с прямой адресацией',
@@ -111,41 +118,44 @@ export default defineConfig({
       },
       {
         text: 'Жадные алгоритмы',
+        collapsed: true,
         items: [
           {
-            text: 'Жадные алгоритмы. Задача об интервалах',
+            text: 'Задача об интервалах',
             link: '/tasks/034.md',
           },
           {
-            text: 'Жадные алгоритмы. Задача о резервных копиях',
+            text: 'Задача о резервных копиях',
             link: '/tasks/035.md',
           },
-          { text: 'Жадные алгоритмы. Задача о рюкзаке', link: '/tasks/036.md' },
+          { text: 'Задача о рюкзаке', link: '/tasks/036.md' },
         ],
       },
       {
         text: 'Динамическое программирование',
+        collapsed: true,
         items: [
           {
-            text: 'Динамическое программирование. Задача о количестве маршрутов. Принцип Беллмана',
+            text: 'Задача о количестве маршрутов. Принцип Беллмана',
             link: '/tasks/039.md',
           },
           {
-            text: 'Динамическое программирование. Задача о возрастающей подпоследовательности наибольшей длины',
+            text: 'Задача о возрастающей подпоследовательности наибольшей длины',
             link: '/tasks/040.md',
           },
           {
-            text: 'Динамическое программирование. Задача о банкомате',
+            text: 'Задача о банкомате',
             link: '/tasks/041.md',
           },
           {
-            text: 'Динамическое программирование. Задача о счастливых билетах',
+            text: 'Задача о счастливых билетах',
             link: '/tasks/042.md',
           },
         ],
       },
       {
         text: 'Графы',
+        collapsed: true,
         items: [
           { text: 'Графы и их представление', link: '/tasks/043.md' },
           {
